@@ -33,3 +33,14 @@ Then, build the image:
 ```shell
 $ docker build -t anna/docker-normal-build-demo:1.0-SNAPSHOT .
 ```
+
+# Local try outs
+# Build
+docker build --tag apaliwal80/java-chaos:third .
+# If you are using springboat and want to start the server locally
+docker run  -p 8080:8080 apaliwal80/java-chaos:third
+# if you want to run it as simple app then
+docker run apaliwal80/java-chaos:third
+
+# You can push the image as
+docker push apaliwal80/java-chaos:third
